@@ -1,4 +1,4 @@
-# docker-terraform
+# docker-terraform [![Circle CI](https://circleci.com/gh/AlbanMontaigu/docker-terraform.svg?style=shield)](https://circleci.com/gh/AlbanMontaigu/docker-terraform)
 
 ## Introduction
 
