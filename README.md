@@ -1,4 +1,8 @@
-# uzyexe/terraform
+# docker-terraform
+
+## Introduction
+
+Thanks to original project [amontaigu/terraform](https://github.com/amontaigu/dockerfile-terraform).
 
 ## What is terraform
 
@@ -10,7 +14,7 @@ Simple file based configuration gives you a single view of your entire infrastru
 
 ## Dockerfile
 
-[**Trusted Build**](https://registry.hub.docker.com/u/uzyexe/terraform/)
+[**Trusted Build**](https://registry.hub.docker.com/u/amontaigu/terraform/)
 
 This Docker image is based on the official [alpine:3.2
 ](https://registry.hub.docker.com/_/alpine/) base image.
@@ -18,7 +22,7 @@ This Docker image is based on the official [alpine:3.2
 ## How to use this image
 
 ```
-docker run --rm uzyexe/terraform [--version] [--help] <command> [<args>]
+docker run --rm amontaigu/terraform [--version] [--help] <command> [<args>]
 
 ```
 
@@ -29,77 +33,77 @@ docker run --rm uzyexe/terraform [--version] [--help] <command> [<args>]
 ### terraform apply
 
 ```
-docker run --rm -v /data:/data -v /etc/ssl/certs:/etc/ssl/certs:ro --net=host uzyexe/terraform apply [options]
+docker run --rm -v /data:/data -v /etc/ssl/certs:/etc/ssl/certs:ro --net=host amontaigu/terraform apply [options]
 ```
 
 ### terraform destroy
 
 ```
-docker run --rm -v /data:/data uzyexe/terraform destroy [options] [DIR]
+docker run --rm -v /data:/data amontaigu/terraform destroy [options] [DIR]
 ```
 
 ### terraform get
 
 ```
-docker run --rm -v /data:/data uzyexe/terraform get [options] PATH
+docker run --rm -v /data:/data amontaigu/terraform get [options] PATH
 ```
 
 ### terraform graph
 
 ```
-docker run --rm -v /data:/data uzyexe/terraform graph [options]
+docker run --rm -v /data:/data amontaigu/terraform graph [options]
 ```
 
 ### terraform init
 
 ```
-docker run --rm -v /data:/data uzyexe/terraform init [options] SOURCE [PATH]
+docker run --rm -v /data:/data amontaigu/terraform init [options] SOURCE [PATH]
 ```
 
 ### terraform output
 
 ```
-docker run --rm -v /data:/data uzyexe/terraform output [options] NAME
+docker run --rm -v /data:/data amontaigu/terraform output [options] NAME
 ```
 
 ### terraform plan
 
 ```
-docker run --rm -v /data:/data -v /etc/ssl/certs:/etc/ssl/certs:ro --net=host uzyexe/terraform plan [options]
+docker run --rm -v /data:/data -v /etc/ssl/certs:/etc/ssl/certs:ro --net=host amontaigu/terraform plan [options]
 ```
 
 ### terraform push
 
 ```
-docker run --rm -v /data:/data -v /etc/ssl/certs:/etc/ssl/certs:ro --net=host uzyexe/terraform push [options]
+docker run --rm -v /data:/data -v /etc/ssl/certs:/etc/ssl/certs:ro --net=host amontaigu/terraform push [options]
 ```
 
 ### terraform refresh
 
 ```
-docker run --rm -v /data:/data -v /etc/ssl/certs:/etc/ssl/certs:ro --net=host uzyexe/terraform refresh [options]
+docker run --rm -v /data:/data -v /etc/ssl/certs:/etc/ssl/certs:ro --net=host amontaigu/terraform refresh [options]
 ```
 
 ### terraform remote
 
 ```
-docker run --rm -v /data:/data -v /etc/ssl/certs:/etc/ssl/certs:ro --net=host uzyexe/terraform remote [options]
+docker run --rm -v /data:/data -v /etc/ssl/certs:/etc/ssl/certs:ro --net=host amontaigu/terraform remote [options]
 ```
 
 ### terraform show
 
 ```
-docker run --rm -v /data:/data uzyexe/terraform show terraform.tfstate [options]
+docker run --rm -v /data:/data amontaigu/terraform show terraform.tfstate [options]
 ```
 
 ### terraform taint
 
 ```
-docker run --rm -v /data:/data -v /etc/ssl/certs:/etc/ssl/certs:ro --net=host uzyexe/terraform taint [options] name
+docker run --rm -v /data:/data -v /etc/ssl/certs:/etc/ssl/certs:ro --net=host amontaigu/terraform taint [options] name
 ```
 
 ### terraform version
 
 ```
-docker run --rm uzyexe/terraform version
+docker run --rm amontaigu/terraform version
 ```
