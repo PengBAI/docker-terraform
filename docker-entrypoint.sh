@@ -1,7 +1,10 @@
 #!/bin/sh -e
 
 # Generating final main.tf file
-m4 ./main.tf.m4 > main.tf
+if [ -f /main.tf.m4 ]
+then
+    m4 ./main.tf.m4 > main.tf
+fi
 
 # Main
 exec /bin/terraform "$@"
