@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Thanks to original project [amontaigu/terraform](https://github.com/amontaigu/dockerfile-terraform).
+Thanks to original project [uzyexe/terraform](https://github.com/uzyexe/dockerfile-terraform).
 
 ## What is terraform
 
@@ -16,8 +16,7 @@ Simple file based configuration gives you a single view of your entire infrastru
 
 [**Trusted Build**](https://registry.hub.docker.com/u/amontaigu/terraform/)
 
-This Docker image is based on the official [alpine:3.2
-](https://registry.hub.docker.com/_/alpine/) base image.
+This Docker image is based on the official [alpine:3.2](https://registry.hub.docker.com/_/alpine/) base image.
 
 ## How to use this image
 
