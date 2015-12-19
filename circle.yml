@@ -2,7 +2,7 @@ machine:
   services:
     - docker
   pre:
-    - sudo curl -L -o /usr/bin/docker 'http://s3-external-1.amazonaws.com/circle-downloads/docker-1.9.0-circleci'; sudo chmod 0755 /usr/bin/docker; true
+    - sudo curl -L -o /usr/bin/docker 'http://s3-external-1.amazonaws.com/circle-downloads/docker-1.9.1-circleci'; sudo chmod 0755 /usr/bin/docker; true
 dependencies:
   override:
     - make build
@@ -15,5 +15,5 @@ deployment:
     commands:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
       - docker push amontaigu/terraform:latest
-      - docker tag amontaigu/terraform:latest amontaigu/terraform:0.6.6
-      - docker push amontaigu/terraform:0.6.6
+      - docker tag amontaigu/terraform:latest amontaigu/terraform:0.6.8
+      - docker push amontaigu/terraform:0.6.8
