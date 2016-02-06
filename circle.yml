@@ -15,5 +15,5 @@ deployment:
     commands:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
       - docker push amontaigu/terraform:latest
-      - docker tag amontaigu/terraform:latest amontaigu/terraform:0.6.8
-      - docker push amontaigu/terraform:0.6.8
+      - docker tag amontaigu/terraform:latest amontaigu/terraform:0.6.11
+      - docker push amontaigu/terraform:0.6.11

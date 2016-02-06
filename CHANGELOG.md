@@ -1,3 +1,7 @@
+
+## 0.6.11 (2015-12-19)
+* Update to terraform 0.6.11
+
 ## 0.6.8 (2015-12-19)
 * Merge from fork base and so update to terraform 0.6.8
 * Update docker image to 1.9.1 for testing
