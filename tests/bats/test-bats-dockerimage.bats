@@ -1,6 +1,6 @@
 #!/usr/bin/env bats
 
-TERRAFORM_VERSION=0.6.8
+TERRAFORM_VERSION=0.6.11
 @test "Test that the container returns correctly the appropriate version = ${TERRAFORM_VERSION}" {
 	result="$(docker run ${DOCKER_IMAGE_NAME} version)"
 	[[ "$result" == *"Terraform v${TERRAFORM_VERSION}"* ]]
