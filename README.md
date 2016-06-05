@@ -32,7 +32,7 @@ docker run --rm amontaigu/terraform [--version] [--help] <command> [<args>]
 ### terraform apply
 
 ```
-docker run --rm -v /data:/data -v /etc/ssl/certs:/etc/ssl/certs:ro --net=host amontaigu/terraform apply [options]
+docker run --rm -v /data:/data amontaigu/terraform apply [options]
 ```
 
 ### terraform destroy
