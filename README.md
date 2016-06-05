@@ -10,13 +10,13 @@ Terraform provides a common configuration to launch infrastructure — from phys
 
 Simple file based configuration gives you a single view of your entire infrastructure.
 
-[http://www.terraform.io/](http://www.terraform.io/)
+[https://www.terraform.io/](https://www.terraform.io/)
 
 ## Dockerfile
 
-[**Trusted Build**](https://registry.hub.docker.com/u/amontaigu/terraform/)
+[**Trusted Build**](https://hub.docker.com/r/amontaigu/terraform/)
 
-This Docker image is based on the official [alpine](https://registry.hub.docker.com/_/alpine/) base image.
+This Docker image is based on the official [alpine:3.3](https://hub.docker.com/_/alpine/) base image.
 
 ## How to use this image
 
@@ -68,25 +68,25 @@ docker run --rm -v /data:/data amontaigu/terraform output [options] NAME
 ### terraform plan
 
 ```
-docker run --rm -v /data:/data -v /etc/ssl/certs:/etc/ssl/certs:ro --net=host amontaigu/terraform plan [options]
+docker run --rm -v /data:/data amontaigu/terraform plan [options]
 ```
 
 ### terraform push
 
 ```
-docker run --rm -v /data:/data -v /etc/ssl/certs:/etc/ssl/certs:ro --net=host amontaigu/terraform push [options]
+docker run --rm -v /data:/data amontaigu/terraform push [options]
 ```
 
 ### terraform refresh
 
 ```
-docker run --rm -v /data:/data -v /etc/ssl/certs:/etc/ssl/certs:ro --net=host amontaigu/terraform refresh [options]
+docker run --rm -v /data:/data amontaigu/terraform refresh [options]
 ```
 
 ### terraform remote
 
 ```
-docker run --rm -v /data:/data -v /etc/ssl/certs:/etc/ssl/certs:ro --net=host amontaigu/terraform remote [options]
+docker run --rm -v /data:/data amontaigu/terraform remote [options]
 ```
 
 ### terraform show
@@ -98,7 +98,7 @@ docker run --rm -v /data:/data amontaigu/terraform show terraform.tfstate [optio
 ### terraform taint
 
 ```
-docker run --rm -v /data:/data -v /etc/ssl/certs:/etc/ssl/certs:ro --net=host amontaigu/terraform taint [options] name
+docker run --rm -v /data:/data amontaigu/terraform taint [options] name
 ```
 
 ### terraform version
@@ -106,3 +106,13 @@ docker run --rm -v /data:/data -v /etc/ssl/certs:/etc/ssl/certs:ro --net=host am
 ```
 docker run --rm amontaigu/terraform version
 ```
+
+
+# Authors
+
+* Shuji Yamada (<uzy.exe@gmail.com>)
+
+## License
+
+This project is licensed under the terms of the MIT license.
+
