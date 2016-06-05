@@ -4,6 +4,8 @@
 - Update to alpine 3.4
 - Now auto deploy on hub is stopped (will use hub directly)
 - Goal for tests is now "tests" instead of "test"
+- Merge with last [uzyexe/dockerfile-terraform
+](https://github.com/uzyexe/dockerfile-terraform) version
 
 ## 0.6.11 (2015-12-19)
 - Update to terraform 0.6.11
