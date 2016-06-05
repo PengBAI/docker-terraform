@@ -7,7 +7,7 @@ all: build test
 build:
 	docker build --tag $(DOCKER_IMAGE_NAME) .
 
-test:
+tests:
 	docker run \
 		-v $(CURDIR):/app \
 		-v $$(which docker):$$(which docker) \

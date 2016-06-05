@@ -10,4 +10,4 @@ dependencies:
     - make build
 test:
   override:
-    - make test
+    - make tests
