@@ -16,7 +16,7 @@ Simple file based configuration gives you a single view of your entire infrastru
 
 [**Trusted Build**](https://hub.docker.com/r/amontaigu/terraform/)
 
-This Docker image is based on the official [alpine:3.3](https://hub.docker.com/_/alpine/) base image.
+This Docker image is based on the official [alpine:3.4](https://hub.docker.com/_/alpine/) base image.
 
 ## How to use this image
 
@@ -41,6 +41,12 @@ docker run --rm -v /data:/data amontaigu/terraform apply [options]
 docker run --rm -v /data:/data amontaigu/terraform destroy [options] [DIR]
 ```
 
+### terraform fmt
+
+```
+docker run --rm -v /data:/data uzyexe/terraform fmt [options] [DIR]
+```
+
 ### terraform get
 
 ```
@@ -51,6 +57,12 @@ docker run --rm -v /data:/data amontaigu/terraform get [options] PATH
 
 ```
 docker run --rm -v /data:/data amontaigu/terraform graph [options]
+```
+
+### terraform import
+
+```
+docker run --rm -v /data:/data uzyexe/terraform [options] ADDR ID
 ```
 
 ### terraform init
@@ -95,10 +107,28 @@ docker run --rm -v /data:/data amontaigu/terraform remote [options]
 docker run --rm -v /data:/data amontaigu/terraform show terraform.tfstate [options]
 ```
 
+### terraform state <subcommand> [options] [args]
+
+```
+docker run --rm -v /data:/data uzyexe/terraform state <subcommand> [options] [args]
+```
+
 ### terraform taint
 
 ```
 docker run --rm -v /data:/data amontaigu/terraform taint [options] name
+```
+
+### terraform untaint
+
+```
+docker run --rm -v /data:/data uzyexe/terraform untaint [options] name
+```
+
+### terraform validate
+
+```
+docker run --rm -v /data:/data uzyexe/terraform validate
 ```
 
 ### terraform version
