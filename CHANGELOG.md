@@ -1,7 +1,6 @@
 
 ## 0.7.6 (2016-10-16)
-- Merge with last [uzyexe/dockerfile-terraform
-  ](https://github.com/uzyexe/dockerfile-terraform) version
+- Merge with last [uzyexe/dockerfile-terraform](https://github.com/uzyexe/dockerfile-terraform) version
 - Update to terraform 0.7.6
 
 ## 0.6.16 (2016-06-04)
@@ -9,8 +8,7 @@
 - Update to alpine 3.4
 - Now auto deploy on hub is stopped (will use hub directly)
 - Goal for tests is now "tests" instead of "test"
-- Merge with last [uzyexe/dockerfile-terraform
-](https://github.com/uzyexe/dockerfile-terraform) version
+- Merge with last [uzyexe/dockerfile-terraform](https://github.com/uzyexe/dockerfile-terraform) version
 
 ## 0.6.11 (2015-12-19)
 - Update to terraform 0.6.11
