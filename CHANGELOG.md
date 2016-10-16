@@ -1,4 +1,8 @@
 
+## 0.7.6 (2016-10-16)
+- Merge with last [uzyexe/dockerfile-terraform
+  ](https://github.com/uzyexe/dockerfile-terraform) version
+
 ## 0.6.16 (2016-06-04)
 - Update to terraform 0.6.16
 - Update to alpine 3.4
