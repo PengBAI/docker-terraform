@@ -30,11 +30,6 @@ RUN apk add --update wget ca-certificates unzip git bash m4 && \
 VOLUME ["/data"]
 WORKDIR /data
 
-# Entrypoint to enable live customization
-COPY docker-entrypoint.sh /docker-entrypoint.sh
-
-# Main command
-ENTRYPOINT ["/docker-entrypoint.sh"]
 
 # Default flags for the main command
-CMD ["--help"]
+CMD /bin/terraform --help
