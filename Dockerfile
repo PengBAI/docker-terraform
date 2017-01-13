@@ -14,7 +14,7 @@ FROM alpine:3.4
 MAINTAINER alban.montaigu@gmail.com
 
 # Environment variables
-ENV TERRAFORM_VERSION="0.6.16" \
+ENV TERRAFORM_VERSION="0.8.4" \
     GLIBC_VERSION="2.23-r3"
 
 # System preparation & terraform installation
